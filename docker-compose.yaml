@@ -1,0 +1,10 @@
+version: '2'
+services:
+  sickbeard:
+    build: .
+    ports:
+      - "10002:8081"
+    volumes:
+      - ${SICKBEARD_CONFIG_DIR}:/config/
+      - ${SICKBEARD_DATA_DIR}:/data
+    restart: always
