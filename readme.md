@@ -8,7 +8,7 @@ RUN useradd --system --uid 10000 -M --shell /usr/sbin/nologin sickbeard
 You must export the Config dir and data dir before running
 
 ```bash
- export SICKBEARD_CONFIG_DIR=/var/lib/application/sickbeard/config
+ export SICKBEARD_CONFIG_DIR=/var/lib/application/sickbeard
  export SICKBEARD_DATA_DIR=/srv
  ```
 
